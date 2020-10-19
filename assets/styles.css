@@ -1,0 +1,25 @@
+@import url("_reset.css");
+@import url("_variables.css");
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--background);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+
+  perspective: 1px;
+
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.container {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}

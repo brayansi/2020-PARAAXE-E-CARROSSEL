@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--pink);
+  width: 100%;
+  height: 4.25rem;
+
+  display: flex;
+  flex-direction: row;
+  place-content: center space-between;
+  align-items: center;
+
+  letter-spacing: 0.25rem;
+  box-sizing: border-box;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 3.25rem;
+  margin-right: 0.75rem;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.header-item {
+  position: relative;
+  margin-left: 3.75rem;
+}
+
+.header-item-selected::before {
+  content: "";
+  width: 100%;
+  height: 0.15rem;
+  background-color: var(--pink);
+  position: absolute;
+  bottom: -0.75rem;
+  border-radius: 0.625rem;
+}

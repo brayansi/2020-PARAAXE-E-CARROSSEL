@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paralax | Valorant</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/header.css" />
+    <link rel="stylesheet" href="assets/valorant.css" />
+    <link rel="stylesheet" href="assets/characters.css" />
+    <link rel="stylesheet" href="assets/carousel.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-left">
+        <img
+          class="header-logo"
+          src="./assets/img/logo.png"
+          alt="Logo Valorante"
+        />
+        <h1 class="header-title">Valorant</h1>
+      </div>
+      <nav>
+        <ul class="header-right">
+          <li class="header-item header-item-selected"><a href="">Home</a></li>
+          <li class="header-item"><a href="">Sobre</a></li>
+          <li class="header-item"><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="valorant">
+        <div class="valorant-photo"></div>
+        <article class="valorant-description container">
+          <h2 class="valorant-brand">Valorant</h2>
+          <div class="valorant-division">
+            <p class="valorant-subtitle">DESAFIE SEUS LIMITES</p>
+            <p class="valorant-text">
+              VALORANT é uma arena global competitiva. Um jogo de tiro tático
+              5x5 que tem como objetivo plantar ou desarmar a Spike. Os
+              jogadores têm apenas uma vida por rodada, e vence a partida quem
+              ganhar 13 rodadas primeiro. Mais do que armas e munição, VALORANT
+              inclui agentes com habilidades adaptativas, rápidas e letais, que
+              criam oportunidades para que sua mecânica de tiro mostre a que
+              veio.
+            </p>
+            <p class="valorant-text">A criatividade é sua melhor arma.</p>
+            <button class="valorant-play">Jogue Grátis</button>
+          </div>
+        </article>
+      </section>
+      <section class="characters">
+        <h2 class="characters-title">Personagens</h2>
+        <article class="carousel">
+          <button
+            class="carousel-button carousel-button-previous"
+            data-previous
+            aria-label="Botão Voltar"
+          >
+            <strong><</strong>
+          </button>
+          <button
+            class="carousel-button carousel-button-next"
+            data-next
+            aria-label="Botão Proximo"
+          >
+            <strong>></strong>
+          </button>
+
+          <ul class="carousel-list-characters" data-list-characters>
+            <a class="carousel-character">
+              <li class="carousel-image-container">
+                <img
+                  src="assets/img/character1.png"
+                  alt=""
+                  class="carousel-image"
+                />
+              </li>
+            </a>
+            <a class="carousel-character">
+              <li class="carousel-image-container">
+                <img
+                  src="assets/img/character2.png"
+                  alt=""
+                  class="carousel-image"
+                />
+              </li>
+            </a>
+            <a class="carousel-character">
+              <li class="carousel-image-container">
+                <img
+                  src="assets/img/character3.png"
+                  alt=""
+                  class="carousel-image"
+                />
+              </li>
+            </a>
+            <a class="carousel-character">
+              <li class="carousel-image-container">
+                <img
+                  src="assets/img/character4.png"
+                  alt=""
+                  class="carousel-image"
+                />
+              </li>
+            </a>
+            <a class="carousel-character">
+              <li class="carousel-image-container">
+                <img
+                  src="assets/img/character5.png"
+                  alt=""
+                  class="carousel-image"
+                />
+              </li>
+            </a>
+          </ul>
+          <div class="carousel-indicators" data-navigation>
+            <button
+              class="carousel-indicator carousel-indicator-active"
+              aria-label="Slide 1"
+              data-indicator="0"
+            ></button>
+            <button
+              class="carousel-indicator"
+              aria-label="Slide 2"
+              data-indicator="1"
+            ></button>
+            <button
+              class="carousel-indicator"
+              aria-label="Slide 3"
+              data-indicator="2"
+            ></button>
+            <button
+              class="carousel-indicator"
+              aria-label="Slide 4"
+              data-indicator="3"
+            ></button>
+            <button
+              class="carousel-indicator"
+              aria-label="Slide 5"
+              data-indicator="4"
+            ></button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

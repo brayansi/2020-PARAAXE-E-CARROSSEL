@@ -1,0 +1,70 @@
+.valorant {
+  display: flex;
+  height: calc(100vh - 4.25rem);
+  overflow: 0;
+}
+
+.valorant-photo {
+  width: 40%;
+  height: 100%;
+  background-image: url(../assets/img/valorant-capa.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: translateZ(-1px) translate(-75%, 25%) scale(2.6);
+  z-index: -1;
+
+  background-color: var(--background);
+}
+
+.valorant-description {
+  width: 60%;
+  padding-top: 3rem;
+  box-sizing: border-box;
+  background-color: var(--background);
+}
+
+.valorant-brand {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: var(--pink);
+  letter-spacing: 0.5rem;
+  line-height: 9rem;
+}
+
+.valorant-division {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.valorant-subtitle {
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: 0.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.valorant-text {
+  width: 40rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.valorant-play {
+  position: absolute;
+  border: none;
+  background-color: var(--pink);
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  font-size: inherit;
+  text-transform: uppercase;
+  border-radius: 35px;
+  min-width: 10.75rem;
+  padding: 1.25rem 1rem;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
